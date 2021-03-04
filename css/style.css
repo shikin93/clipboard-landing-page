@@ -308,12 +308,16 @@ button.mac {
   margin: 50px auto;
 }
 
-.footer__contact a {
-  text-decoration: none;
+.footer__contact .facebook,
+.footer__contact .twitter,
+.footer__contact .instagram {
   color: #4c545d;
+  cursor: pointer;
 }
 
-.footer__contact a:active {
+.footer__contact .facebook:active,
+.footer__contact .twitter:active,
+.footer__contact .instagram:active {
   color: #26baa4;
 }
 

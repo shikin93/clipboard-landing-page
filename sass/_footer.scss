@@ -34,9 +34,11 @@
     max-width: 40%;
     margin: 50px auto;
 
-    a {
-      text-decoration: none;
+    .facebook,
+    .twitter,
+    .instagram {
       color: $darkGrayishBlue;
+      cursor: pointer;
 
       &:active {
         color: $strongCyan;
