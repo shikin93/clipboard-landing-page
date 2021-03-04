@@ -1,0 +1,155 @@
+/* Main */
+.main {
+  &__container {
+    max-width: 85%;
+    margin: 50px auto;
+
+    h2 {
+      font-size: 5vmin;
+    }
+
+    .snippets {
+      &__header {
+        padding: 50px 0 70px;
+      }
+
+      &__feature {
+        padding: 60px 0;
+
+        &--sync {
+          padding: 60px 0;
+        }
+      }
+    }
+
+    .platform {
+      padding: 100px 0;
+
+      img {
+        padding-top: 70px;
+      }
+    }
+
+    .tools {
+      .tools__items {
+        img {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 10px;
+        }
+
+        padding: 70px 0 50px;
+        display: flex;
+        flex-direction: column;
+
+        &--1,
+        &--2,
+        &--3 {
+          flex-basis: 30%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .partner {
+      padding: 75px 0;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      :not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    .download {
+      &__article {
+        padding: 50px 0 50px;
+      }
+
+      &__app .ios {
+        margin: 0 0 25px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main .download__app {
+    .ios {
+      margin: 0 25px 0 0;
+    }
+    button {
+      max-width: 30%;
+    }
+  }
+
+  .main .partner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 300px;
+
+    :not(:last-child) {
+      margin-bottom: auto;
+      padding-left: 50px;
+    }
+  }
+
+  .main .tools .tools__items {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--1,
+    &--2,
+    &--3 {
+      flex-basis: 30%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 991px) {
+  .main__container {
+    margin: 0;
+    max-width: 100%;
+
+    .snippets {
+      &__header {
+        max-width: 50%;
+        margin: auto;
+      }
+
+      &__container {
+        img {
+          margin-left: -5%;
+        }
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+
+        .snippets__feature {
+          text-align: left;
+          padding: 0 0 0 50px;
+          max-width: 60%;
+        }
+      }
+    }
+
+    .platform,
+    .download {
+      max-width: 65%;
+      margin: auto;
+    }
+
+    .tools__items,
+    .partner {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+}
